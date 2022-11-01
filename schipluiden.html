@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Schipluiden - Huiswerk Webdesign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Externe stijl als lettertype gekozen via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <meta name="Huiswerk opdracht" content="Responsive website maken, mobile first">
+  <meta name="author" content="Priscilla">
+  <meta name="keywords:" content="Schipluiden">
+  <meta name="viewport" content="width=device-width, initial scale=1.0"> <!-- Mobiel eerst -->
+  <style> /* begin stijl sheet */
+  [class*="col-"] {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  }
+
+  #content {
+    background-color: #EFB2E8;
+  }
+
+  .header {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(Midden-Delfland.jpg);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-size: 25% 125%;
+    background-repeat: no-repeat;
+    background-color: #DEB2EF;
+    margin-bottom: 2%;
+  }
+  #facts {
+    padding: 10px;
+    background-color: #8A5EF6;
+    list-style-type: none;
+    font-size: 80%;
+  }
+
+  #artikel1 {
+    background-color: purple;
+    font-size: 80%;
+  }
+
+  #artikel2 {
+    background-color: purple;
+    font-size: 90%;
+  }
+
+  img {
+    float: right;
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  #footer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 75%;
+    background-color: #6B39F2;
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+  }
+  </style>
+  </head>
+  <body>
+    <div id="content">
+    <div class="header">
+      <header>
+        <h2>Schipluiden</h2>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <section id="facts">
+          <h3>Feitjes over Schipluiden</h3><!-- Lijstje met feitjes-->
+          <ul>
+            <li>In de Harnaschpolder in Schipluiden is in de zomer van 2003 de oudst bekende permanente nederzetting van Nederland opgegraven.</li>
+            <li>In de periode van 3600 v.Chr. tot 3300 v.Chr. (Jongere Steentijd) woonden mensen op een duin van 150 bij 50 meter, dat één tot twee meter hoog was.</li>
+            <li>De eerste windwatermolen van Zuid-Holland stond in Schipluiden.</li>
+            <li>Aantal inwoners: 4290</li>
+            <li>De unieke trambrug dient sinds 1974 als fietspad, in 1912 kwam de stoomtram over deze brug.</li>
+          </ul>
+        </section>
+      </div>
+      <div class="col-5">
+        <section id="artikel1"> <!-- Artikel nummer 1-->
+          <h3>Museum het Tramstation Schipluiden</h3>
+          <p><img src="museum-tramstation.jpeg" alt="Museum het Tramstation Schipluiden"> Het station in Schipluiden is gebouwd in een eclectische stijl met elementen uit de chaletstijl en Art Nouveau.
+            De overkapping van de wachtkamer naar het perron is verdwenen, maar er bestaat een plan om deze ruimte terug te brengen.
+            Het interieur van het tramstation is nog geheel intact met als pronkstuk de Jugendstilwachtkamer. Het pand is een jong rijksmonument.
+            Tot juni 1925 vervoerde de stoomtram zowel personen als goederen. Voor een ritje naar Delft betaalde men in 1912 15 cent. In het tramstation woonde de stationschef met zijn gezin.
+            In het begin van de jaren zestig van de vorige eeuw stopte het geregelde tramvervoer in het Westland en verdwenen de meeste tramstations.
+            In Schipluiden is het gebouw gelukkig bewaard gebleven.
+            Van 1963 tot 1987 werd het tramstation achtereenvolgens gebruikt als kantoor van het transportbedrijf Eikelenboom en werkplaats van het gespecialiseerde bedrijf van Spaans.
+            In het voorjaar van 1987 kreeg de Historische Vereniging Oud-Schipluiden het pand van de gemeente toegewezen.
+            Na een ingrijpende restauratie werd het gebouw op 28 april 1989 als Museum Het Tramstation in gebruik genomen.</p>
+        </section>
+      </div>
+      <div class="col-2">
+        <section id="artikel2"> <!-- Artikel nummer 2-->
+          <h4>Varen in Schipluiden</h4>
+          <p><img src="gaag_schipluiden.jpg" alt="Varen door Schipluiden">In Schipluiden kun je heerlijk varen of genieten van andere water activiteiten zoals kano-varen, waterfietsen en suppen.
+            Er zijn heel veel mooie vaarroutes door onder andere Midden-Delfland, het Westland, Maasland en Vlaardingen.
+            Aan het water kom je verschillende restaurants en terrassen tegen en er is onderweg voldoende te zien en te beleven in de prachtige natuur.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+<footer id="footer"><p><strong>&copy; Copyright 2022 By Priscilla</strong></p></footer> <!-- Footer met copywright vermelding -->
+</body>
+
+</html>
